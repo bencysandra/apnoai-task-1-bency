@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Explorers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">AI Explorers</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home" class="hero">
+        <h1>Welcome to AI Explorers</h1>
+        <p>Explore Artificial Intelligence and discover new possibilities.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Us</h2>
+
+        <p>
+            AI Explorers is a student community for people interested
+            in Artificial Intelligence and technology.
+        </p>
+
+        <p>
+            We encourage beginners to learn new concepts, share ideas,
+            and develop practical skills through projects and activities.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container alt-bg">
+        <h2>What We Explore</h2>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h3>Artificial Intelligence</h3>
+                <p>Learn about AI and how it is used in everyday life.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Machine Learning</h3>
+                <p>Understand how computers learn from data.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Projects</h3>
+                <p>Work on simple projects and turn ideas into reality.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="container">
+    <h2>Contact Us</h2>
+
+    <p>Email: contact@aiexplorers.example</p>
+    <p>Location: Chennai, India</p>
+    <p>Community: Student Technology Club</p>
+</section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AI Explorers. All rights reserved.</p>
+    </footer>
+
+    <!-- Dark Mode -->
+    <script>
+        const themeButton = document.getElementById("theme-toggle");
+
+        themeButton.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                themeButton.textContent = "☀️";
+            } else {
+                themeButton.textContent = "🌙";
+            }
+        });
+    </script>
+
+</body>
+</html>
